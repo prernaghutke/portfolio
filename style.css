@@ -1,0 +1,69 @@
+:root{
+  --bg-gradient: linear-gradient(135deg,#6b2af7 0%, #1d1440 60%);
+  --accent: #6b2af7;
+  --text: #222;
+  --muted: #666;
+  --white: #fff;
+  --card: #fafafa;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+
+.site-header .hero{
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--white);
+  background:var(--bg-gradient);
+  text-align:center;
+  padding:48px 20px;
+}
+
+.hero-inner{max-width:900px}
+.profile-photo{
+  width:140px;height:140px;border-radius:50%;border:6px solid rgba(255,255,255,.9);object-fit:cover;display:block;margin:0 auto 18px;
+}
+
+h1{letter-spacing:6px;margin:6px 0 6px;font-size:30px}
+.role{opacity:.95;margin:0 0 6px}
+.tagline{opacity:.9;margin-bottom:18px;font-size:15px}
+
+.hero-ctas .btn{margin:6px 8px;text-decoration:none;padding:10px 18px;border-radius:28px;display:inline-block}
+.btn.primary{background:#fff;color:#111}
+.btn.outline{background:transparent;border:2px solid rgba(255,255,255,.9);color:#fff}
+.btn.ghost{background:transparent;color:rgba(255,255,255,.95);border:1px dashed rgba(255,255,255,.2);padding:8px 12px;font-size:13px}
+
+.container{max-width:1100px;margin:40px auto;padding:0 20px;display:flex;gap:30px}
+.about .left{width:320px;background:#f1f1f1;padding:28px;border-radius:6px}
+.about .right{flex:1;padding:8px 0}
+
+/* Left column content */
+.left h2, .left h3{font-family:"Montserrat", "Arial";letter-spacing:2px}
+.left p{color:var(--muted);line-height:1.5;font-size:14px}
+.education li{margin-bottom:10px}
+.bulleted{list-style:disc;margin-left:18px;color:var(--text)}
+
+/* Projects & tools on right */
+.projects h2{margin-top:0}
+.project{background:var(--card);padding:18px;border-radius:6px;margin-bottom:16px;box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.project h3{margin:0 0 8px;font-size:18px}
+.project ul{margin:0 0 0 18px;color:var(--muted)}
+
+.tools{margin-top:18px;padding:12px}
+
+/* Contact */
+.contact{margin-top:10px;padding:18px;background:#fff;border-radius:6px}
+.contact-grid{display:flex;gap:30px;justify-content:space-between}
+.contact-form{margin-top:18px;display:grid;gap:10px}
+.contact-form label{display:block}
+.contact-form input, .contact-form textarea{width:100%;padding:8px;border:1px solid #ddd;border-radius:4px}
+.site-footer{text-align:center;padding:20px 0;background:#111;color:#eee;margin-top:40px}
+
+/* Responsive */
+@media (max-width:900px){
+  .container{flex-direction:column}
+  .about .left{width:auto}
+  .contact-grid{flex-direction:column}
+}

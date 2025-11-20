@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prerna Ghutke — Portfolio</title>
+
+  <!-- Security / privacy headers (meta-level) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https: file:; script-src 'self'; style-src 'self' 'unsafe-inline';">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="hero">
+      <div class="hero-inner">
+        <img class="profile-photo" src="/mnt/data/b5241088-c3ee-4f8a-8621-04835dd93240.png" alt="Prerna Ghutke">
+        <h1>PRERNA GHUTKE</h1>
+        <p class="role">Content Writer · Copywriter · Digital Storyteller</p>
+        <p class="tagline">Turning thoughts into stories that inspire action and emotion</p>
+
+        <div class="hero-ctas">
+          <a class="btn primary" href="#projects">View Work</a>
+          <a class="btn outline" href="#contact">Contact</a>
+          <!-- Local file download (your uploaded CV). Replace path when hosting -->
+          <a class="btn ghost" href="/mnt/data/Screenshot (89).png" download="prernaghutke_cv_page1.png">Download CV (page 1)</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="container about">
+      <div class="left">
+        <h2>About Me</h2>
+        <p>Curious mind with a love for words and ideas. I enjoy turning thoughts into stories that inspire action and emotion. As a fresh graduate, I’m eager to explore the art of copywriting, build strong brand voices, and grow in the field of digital creativity.</p>
+
+        <h3>Education</h3>
+        <ul class="education">
+          <li><strong>BCA — Media & IT</strong>, Ajeenkya Dy Patil University, Pune (2022–2025 | Pursuing)</li>
+          <li><strong>HSC</strong>, State Board of Maharashtra — Completed 2022 | 65%</li>
+          <li><strong>SSC</strong>, State Board of Maharashtra — Completed 2020 | 85%</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul class="bulleted">
+          <li>Creative Writing</li>
+          <li>SEO & Social Media Copywriting</li>
+          <li>Content Strategy</li>
+          <li>Storytelling & Branding</li>
+          <li>Research & Editing</li>
+          <li>Time Management</li>
+        </ul>
+
+        <h3>Languages</h3>
+        <ul class="bulleted">
+          <li>English</li>
+          <li>Marathi</li>
+          <li>Hindi</li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <div id="projects" class="projects">
+          <h2>Projects & Experience</h2>
+
+          <article class="project">
+            <h3>Social Media Copywriting (Personal Project)</h3>
+            <ul>
+              <li>Wrote engaging Instagram captions and post descriptions for art & lifestyle content.</li>
+              <li>Focused on tone, storytelling, and audience engagement.</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3>Content for Restaurant Website</h3>
+            <ul>
+              <li>Created persuasive web copy and food descriptions for a vegetarian restaurant.</li>
+              <li>Ensured clarity, SEO-friendly keywords, and a consistent brand voice.</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3>Academic Research Writing</h3>
+            <ul>
+              <li>Authored the paper <em>"Stress Through Their Words: A Qualitative Look at University Students’ Academic Experiences."</em></li>
+              <li>Experienced in research-based writing, data interpretation, and formal academic tone.</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div class="tools">
+          <h3>Tools</h3>
+          <ul class="bulleted">
+            <li>Canva</li>
+            <li>Google Docs</li>
+            <li>Grammarly</li>
+            <li>Notion</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Phone</strong><br>7875063340</p>
+          <p><strong>Email</strong><br><a href="mailto:prernaghutke@gmail.com">prernaghutke@gmail.com</a></p>
+        </div>
+        <div>
+          <p><strong>Location</strong><br>Vidya Nagar, Bramhanpur, Chandrapur — 441206</p>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="return contactSubmit(event)">
+        <label>
+          <span>Your name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Your email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Prerna Ghutke — Content Writing & Copywriting</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
